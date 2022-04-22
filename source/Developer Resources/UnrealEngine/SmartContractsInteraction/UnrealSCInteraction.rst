@@ -33,6 +33,7 @@ console.
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
 .. code-block:: cpp
 
@@ -56,6 +57,7 @@ console.
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 .. image:: images/initialize-manager.png
    :target: images/initialize-manager.png
@@ -73,6 +75,8 @@ console.
 
    </details>
 
+|
+
 To deploy a smart contract you need to use ``StratisUnrealManager::sendCreateContractTransaction`` which returns the txId after execution. That txId can be used to get a receipt once the transaction has been executed. 
 
 For example here is how to deploy StandardToken contract: 
@@ -81,6 +85,7 @@ For example here is how to deploy StandardToken contract:
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
 .. code-block:: cpp
 
@@ -107,6 +112,7 @@ For example here is how to deploy StandardToken contract:
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 .. image:: images/deploy-standard-token-manual.png
    :target: images/deploy-standard-token-manual.png
@@ -120,12 +126,15 @@ For example here is how to deploy StandardToken contract:
 
    </details>
 
+|
+
 And once transaction is confirmed you can use the below to query the receipt.
 
 .. raw:: html
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
 .. code-block:: cpp
     
@@ -146,6 +155,7 @@ And once transaction is confirmed you can use the below to query the receipt.
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 .. image:: images/wait-receipt.png
    :target: images/wait-receipt.png
@@ -155,12 +165,8 @@ And once transaction is confirmed you can use the below to query the receipt.
 
    </details>
 
-::
 
-    ReceiptResponse receipt = await
-    client.ReceiptAsync("95b9c1e8ab28071b750ab61a3647954b0476d75173d91d0c8db0267c4894d1f6").ConfigureAwait(false);
-
-    string contractAddr = receipt.NewContractAddress;
+|
 
 Also there are wrappers for smart contracts that perform constructor parameter encoding for you. You can check `StandartTokenWrapper` and `NFTWrapper` for examples.  Here is StandardToken deployment example using a wrapper: 
 
@@ -168,6 +174,7 @@ Also there are wrappers for smart contracts that perform constructor parameter e
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
 .. code-block:: cpp
 
@@ -184,6 +191,7 @@ Also there are wrappers for smart contracts that perform constructor parameter e
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 .. image:: images/deploy-standard-token-wrapper.png
    :target: images/deploy-standard-token-wrapper.png
@@ -192,6 +200,8 @@ Also there are wrappers for smart contracts that perform constructor parameter e
 .. raw:: html
 
    </details>
+
+|
 
 Using Smart Contracts
 ~~~~~~~~~~~~~~~~~~~~~
@@ -204,6 +214,7 @@ Here is an example of making a local call:
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
 .. code-block:: cpp
 
@@ -230,6 +241,7 @@ Here is an example of making a local call:
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 .. image:: images/5-local-call-example.png
    :target: images/5-local-call-example.png
@@ -239,12 +251,15 @@ Here is an example of making a local call:
 
    </details>
 
+|
+
 The below is an example of making an on-chain call: 
 
 .. raw:: html
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
 .. code-block:: cpp
 
@@ -267,6 +282,7 @@ The below is an example of making an on-chain call:
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 .. image:: images/3-call-contract-example.png
    :target: images/3-call-contract-example.png
@@ -275,6 +291,8 @@ The below is an example of making an on-chain call:
 .. raw:: html
 
    </details>
+
+|
 
 Using Smart Contracts via Wrappers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -287,6 +305,7 @@ Here is an example for StandardToken Wrapper that displays information about tar
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
 .. code-block:: cpp
 
@@ -307,6 +326,7 @@ Here is an example for StandardToken Wrapper that displays information about tar
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 .. image:: images/standard-token-get-symbol.png
    :target: images/standard-token-get-symbol.png
@@ -316,12 +336,15 @@ Here is an example for StandardToken Wrapper that displays information about tar
 
    </details>
 
+|
+
 Here is an example for a NFT Contract and minting a new NFT: 
 
 .. raw:: html
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
 .. code-block:: cpp
 
@@ -378,6 +401,7 @@ Here is an example for a NFT Contract and minting a new NFT:
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 .. image:: images/mint-and-check-balance.png
    :target: images/mint-and-check-balance.png
@@ -390,4 +414,6 @@ Here is an example for a NFT Contract and minting a new NFT:
 .. raw:: html
 
    </details>
+
+|
 

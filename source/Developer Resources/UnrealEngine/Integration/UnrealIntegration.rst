@@ -88,6 +88,7 @@ Then, we need get an address of our wallet.
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
 First of all, we need to set up ``StratisUnrealManager`` to be able to use all of the API methods provided by the plugin.
 
@@ -116,6 +117,7 @@ Let's open the **Source** path of your project and create a new header named ``S
    };
 
 Then, we need to initialize ``stratisManager`` variable and implement function that prints address.
+
 .. code-block:: cpp
 
    UStratisHandler::UStratisHandler() {
@@ -142,6 +144,7 @@ Then, we need to initialize ``stratisManager`` variable and implement function t
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 .. image:: images/initialize-manager.png
    :target: images/initialize-manager.png
@@ -160,6 +163,8 @@ Now we can find our address in the console log.
 .. raw:: html
 
    </details>
+
+|
 
 Let's copy the address and now let's go back to our Swagger API server. I
 has a default wallet that I have prepared here which has ``0.1 STRAX``.
@@ -230,10 +235,11 @@ Performing Transactions using the Plugin
 Getting a wallet balance
 ------------------------
 
-.. raw:: htmlx
+.. raw:: html
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
 .. code-block:: cpp
 
@@ -256,6 +262,7 @@ This code will print your balance if the call succeeds, and print an error other
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 At first, let's make a function for printing balance response to screen. Implement a blueprint like below:
 
@@ -301,6 +308,8 @@ Desired event graph is shown below (\ ``Delay`` node is not necessary):
 
    </details>
 
+|
+
 Getting unspent transaction outputs (UTXOs)
 -------------------------------------------
 
@@ -308,6 +317,7 @@ Getting unspent transaction outputs (UTXOs)
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
 .. code-block:: cpp
 
@@ -335,6 +345,7 @@ This code will print all of your utxos to log console one-by-one if the call is 
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 At first, let's create a method ``Print UTXOs`` and add the input parameter ``UTXOs`` with type ``Array`` of ``UTXO``. Now we're going to iterate over UTXO's array using **For Each Loop** node:
 
@@ -365,6 +376,8 @@ We are almost done. Now we just need to call the **Get Coins** node as we did fo
 
    </details>
 
+|
+
 Sending coins & waiting for a receipt
 -------------------------------------
 
@@ -372,6 +385,7 @@ Sending coins & waiting for a receipt
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
 At first, define a couple of variables:
 
@@ -426,6 +440,7 @@ To achieve this, use the code shown below:
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 At first, add the ``Send Coins Transaction`` node and set its inputs:
 
@@ -453,5 +468,7 @@ At last, add some printing logic to see when receipt is available, and we're don
 .. raw:: html
 
    </details>
+
+|
 
 So that's pretty much it! Click next to view a further guide based on integrating Stratis Smart Contracts.

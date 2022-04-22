@@ -13,4 +13,4 @@ This section of the Academy aims to provide developers with a guide to performin
    Smart Contracts <SmartContracts/smartcontracts-introduction>
    Stratis Full Node <Stratis Full Node/StratisFullNode-Introduction>
    Unity3D <Unity3D/unity3d-intro>
-   Unreal Engine <Unreal Engine/unreal-engine-introduction>
+   Unreal Engine <UnrealEngine/unreal-engine-introduction>

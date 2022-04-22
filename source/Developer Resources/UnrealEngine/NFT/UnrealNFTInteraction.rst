@@ -22,6 +22,7 @@ At first, we need to generate a new address and fund it. You will need tokens in
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
 .. code-block:: cpp
 
@@ -48,6 +49,7 @@ At first, we need to generate a new address and fund it. You will need tokens in
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 .. image:: images/init-wallet.png
    :target: images/init-wallet.png
@@ -59,12 +61,15 @@ At first, we need to generate a new address and fund it. You will need tokens in
 
    </details>
 
+|
+
 To create instance of UNFTWrapper, we can use ``createInstance`` or ``createDefaultInstance`` methods:
 
 .. raw:: html
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
 .. code-block:: cpp
 
@@ -89,6 +94,7 @@ where:
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 
 .. image:: images/create-wrapper-method.png
@@ -106,12 +112,15 @@ where:
 
    </details>
 
+|
+
 To deploy the NFT contract, we need to use the ``deployNFTContract`` method:
 
 .. raw:: html
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
 .. code-block:: cpp
 
@@ -135,6 +144,7 @@ where:
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 .. image:: images/deploy-nft-method.png
    :target: images/deploy-nft-method.png
@@ -144,6 +154,8 @@ where:
 
    </details>
 
+|
+
 Once the transaction is mined it’s executed and your contract is deployed.
 After that you can use transaction id to get a receipt which will contain new
 contract’s address. For example:
@@ -152,6 +164,7 @@ contract’s address. For example:
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
 .. code-block:: cpp
 
@@ -192,6 +205,7 @@ contract’s address. For example:
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 .. image:: images/deploy-nft.png
    :target: images/deploy-nft.png
@@ -202,6 +216,8 @@ contract’s address. For example:
 .. raw:: html
 
    </details>
+
+|
 
 Minting NFT
 -----------
@@ -214,7 +230,9 @@ minting a new NFT that will belong to that address. For example:
    <details>
    <summary><a>C++ version</a></summary>
 
-:: code-block:: cpp
+|
+
+.. code-block:: cpp
 
    FString owner(TEXT("tD5aDZSu4Go4A23R7VsjuJTL51YMyeoLyS"));
 
@@ -232,6 +250,7 @@ minting a new NFT that will belong to that address. For example:
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 .. image:: images/mint-nft.png
    :target: images/mint-nft.png
@@ -243,6 +262,8 @@ minting a new NFT that will belong to that address. For example:
 
    </details>
 
+|
+
 Getting NFT balance
 -------------------
 
@@ -253,8 +274,9 @@ You can get it with ``UNFTWrapper::getBalanceOf`` like this:
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
-:: code-block:: cpp
+.. code-block:: cpp
 
    FString owner(TEXT("tD5aDZSu4Go4A23R7VsjuJTL51YMyeoLyS"));
 
@@ -277,6 +299,7 @@ You can get it with ``UNFTWrapper::getBalanceOf`` like this:
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 .. image:: images/get-balance.png
    :target: images/get-balance.png
@@ -287,6 +310,8 @@ You can get it with ``UNFTWrapper::getBalanceOf`` like this:
 .. raw:: html
 
    </details>
+
+|
 
 Transferring NFT to another address
 -----------------------------------
@@ -299,8 +324,9 @@ token you want to transfer.
 
    <details>
    <summary><a>C++ version</a></summary>
+|
 
-:: code-block:: cpp
+.. code-block:: cpp
 
    uint64 tokenId = 12345;
 
@@ -317,6 +343,7 @@ token you want to transfer.
 
    <details>
    <summary><a>Blueprint version</a></summary>
+|
 
 .. image:: images/transfer-nft.png
    :target: images/transfer-nft.png
